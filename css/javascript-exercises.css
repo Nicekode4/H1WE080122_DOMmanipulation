@@ -16,10 +16,15 @@ body {
   position: relative;
 }
 
+.bigStyle{
+  font-size: 25px;
+}
+
 main {
   border: solid 1px #333;
   display: grid;
   grid-template-columns: 6fr 3fr;
+  
 }
 
 h1 {

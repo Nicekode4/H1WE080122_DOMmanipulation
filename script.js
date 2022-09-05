@@ -54,27 +54,41 @@ document.querySelector('#ex8').addEventListener('click', function () {
     document.querySelectorAll('ul')[1].innerHTML = ""
 })
 
-
+//Punkt 9 - Ikke færdig
 document.querySelector('#ex9').addEventListener('click', function () {
+
+    document.querySelectorAll('ol')[0].style.position = "absolute" 
     
+    //document.querySelectorAll('ol')[0].style.marginLeft = "100vh" 
+
 })
 
-
+//Punkt 10
 document.querySelector('#ex10').addEventListener('click', function () {
+    if (document.querySelectorAll('button')[0].style.display == "none") {
+        document.querySelectorAll('button').forEach(element => {
+            element.style.display = "block"
+        });
+    }else{
+        document.querySelectorAll('button').forEach(element => {
+        element.style.display = "none"
+    });
+    document.querySelectorAll('button')[9].style.display = "block"
+    }
     
 })
 
-
+//Punkt 11
 document.querySelector('#ex11').addEventListener('click', function () {
-    
+ document.body.style.rotate = "15deg"   
 })
 
-
+//Punkt 12
 document.querySelector('#ex12').addEventListener('click', function () {
-    
+    document.body.classList.add("bigStyle");
 })
 
-
+//Punkt 13
 document.querySelector('#ex13').addEventListener('click', function () {
-    
+    document.body.classList.toggle("bigStyle");
 })
