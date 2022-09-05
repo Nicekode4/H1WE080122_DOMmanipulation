@@ -26,24 +26,32 @@ document.querySelector('#ex4').addEventListener('click', function () {
    });
 })
 
-
+//Punkt 5
 document.querySelector('#ex5').addEventListener('click', function () {
-    
+   document.querySelectorAll('a')[0].style.fontFamily = "Arial" 
+   document.querySelectorAll('a')[0].style.color = "red" 
 })
 
-
+//Punkt 6
 document.querySelector('#ex6').addEventListener('click', function () {
-    
+   document.querySelectorAll('ol')[0].innerHTML = document.querySelectorAll('ol')[0].innerHTML + '<li>Aliquam tincidunt mauris eu risus.</li>'
 })
 
-
+//Punkt 7
 document.querySelector('#ex7').addEventListener('click', function () {
-    
+ for (let index = 0; index < document.querySelectorAll('li').length; index += 2) {
+    document.querySelectorAll('li')[index].style.color = "red"
+ }   
 })
 
-
+//Punkt 8
 document.querySelector('#ex8').addEventListener('click', function () {
-    
+    document.querySelectorAll('h3')[0].outerHTML = '<ul></ul>'
+    document.querySelectorAll('h4')[0].outerHTML = '<ol></ol>'
+    document.querySelectorAll('ul')[0].innerHTML = document.querySelectorAll('ol')[0].innerHTML
+    document.querySelectorAll('ol')[0].innerHTML = ""
+    document.querySelectorAll('ol')[1].innerHTML = document.querySelectorAll('ul')[1].innerHTML
+    document.querySelectorAll('ul')[1].innerHTML = ""
 })
 
 
