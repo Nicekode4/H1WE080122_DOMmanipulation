@@ -86,9 +86,14 @@ document.querySelector('#ex11').addEventListener('click', function () {
 //Punkt 12
 document.querySelector('#ex12').addEventListener('click', function () {
     document.body.classList.add("bigStyle");
+    console.log(document.querySelectorAll('.bigStyle'));
+    document.querySelectorAll('.bigStyle')[0].style.fontSize = "25px"
 })
 
 //Punkt 13
 document.querySelector('#ex13').addEventListener('click', function () {
-    document.body.classList.toggle("bigStyle");
+
+    //I added this class this class CSS
+    document.body.classList.toggle("bigStyle2");
+
 })
